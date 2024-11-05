@@ -1,0 +1,173 @@
+body {
+    background-color: black;
+}
+
+a {
+    color: white !important;
+}
+
+i {
+    cursor: pointer;
+}
+header div.items {
+    padding-inline: 1rem ;
+}
+
+div.toggle {
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 900;
+    color: #000000 !important;
+}
+
+div.layer {
+    width: 320px;
+}
+
+nav.nav {
+    width: 270px;
+}
+div.sidebar{
+    width: 50px;
+}
+
+
+div.alert {
+    width: fit-content;
+}
+
+/* css links */
+
+/* slide up */
+ .links {
+    position: relative; 
+} 
+ 
+.nav-link {
+    position: relative; 
+    opacity: 0; 
+    animation: topone 0.3s forwards; 
+} 
+
+ @keyframes topone {
+    0% {
+        transform: translateY(200%); 
+        opacity: 0; 
+            }
+    100% {
+        transform: translateY(0); 
+        opacity: 1; 
+    }
+} 
+
+.link-1 {
+    animation-delay: 0s; 
+} 
+.link-2 {
+    animation-delay: 0.1s; 
+} 
+ .link-3 {
+    animation-delay: 0.2s; 
+} 
+ .link-4 {
+    animation-delay: 0.3s; 
+} 
+ .link-5 {
+    animation-delay: 0.4s; 
+} 
+
+/* slide down */
+/* @keyframes slideOutDown {
+    0% {
+        transform: translateY(0); 
+        opacity: 1; 
+
+    }
+    100% {
+        transform: translateY(100%); 
+        opacity: 0; 
+    }
+} */
+
+/* css card */
+
+div.card-img {
+    position: relative; 
+    overflow: hidden;
+}
+
+div.card-img div.card-body {
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    transition: top 0.3s ease; 
+    /* display: none; */
+    cursor: pointer;
+}
+
+div.card-img:hover div.card-body {
+    top: 0% ;
+}
+
+
+/* Search */
+
+
+div.content
+{
+    margin-inline: auto;
+}
+
+/* Category */
+section.category {
+    position: relative;
+    z-index: 1;
+}
+
+.layer {
+    z-index: 2 !important;
+}
+section.category div.img  div.card-body {
+    top: 100%;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.719);
+}
+
+section.category div.img:hover div.card-body {
+    top: 0;
+}
+
+
+/* loading page */
+.loading-screen {
+    z-index: 9999; 
+}
+
+.text-white {
+    color: white; 
+}
+
+
+
+
+div.content input p {
+    color: #842029;
+    background-color: #f8d7da;
+}
+
+/* media Query */
+
+@media 
+ screen and (max-width: 992px) {
+    .card-body h3 {font-size: 15px !important;}
+}
+
+
+@media 
+ screen and (max-width: 772px) {
+    .card-body h3 {font-size: 30px !important;}
+}
